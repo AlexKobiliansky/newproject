@@ -1,0 +1,63 @@
+.btn
+  display: inline-block
+  +mt(.3s)
+  white-space: nowrap
+  cursor: pointer
+  border-width: 2px
+  border-style: solid
+  text-align: center
+  font-size: 18px
+  line-height: 21px
+  padding: 14px 30px
+  position: relative
+  box-shadow: none
+  .svg
+    margin-left: 15px
+    position: relative
+    top: 2px
+    +mt(.3s)
+
+.btn-white
+  border-color: $accent-dark
+  background-color: transparent
+  color: $accent-dark
+  .svg
+    fill: $accent-dark
+  &.btn-skew
+    &:before
+      background-color: $accent-dark
+  &:hover
+    color: #fff
+    .svg
+      fill: #fff
+
+.btn-skew
+  +mt(.8s)
+  z-index: 3
+  overflow: hidden
+  &:before
+    content: ''
+    position: absolute
+    +mt(.8s)
+    top: 0
+    width: 200%
+    height: 100%
+    transform: translateX(125%) skew(45deg)
+  &:hover
+    &:before
+      transform: translateX(-40%) skew(45deg)
+  span
+    position: relative
+    z-index: 4
+  .svg
+    +mt(.8s)
+
+.btn-dark
+  border-color: $accent-dark
+  background-color: $accent-dark
+  color: #fff
+  &:hover
+    background-color: transparent
+    color: $accent-dark
+
+

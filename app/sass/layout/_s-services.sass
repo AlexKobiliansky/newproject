@@ -1,0 +1,63 @@
+.s-services
+  padding-bottom: 90px
+
+.services-wrap
+  display: flex
+  justify-content: space-between
+  margin-top: 90px
+
+.service-item
+  width: calc(33% - 26px)
+  &-title
+    font-size: 36px
+    margin-bottom: 40px
+    color: $accent-dark
+    font-weight: 700
+    line-height: 42px
+  &-img
+    position: relative
+    +bg-cover
+    height: 230px
+    a
+      +mt(.3s)
+      position: absolute
+      right: 0
+      bottom: 0
+      opacity: 0
+  &-desc
+    background-color: rgba(37, 37, 37, 0.7)
+    font-size: 18px
+    color: #fff
+    padding: 18px 43px 18px 49px
+  &:hover
+    .service-item-img
+      a
+        opacity: 1
+
+.services-bottomline
+  margin-top: 50px
+  display: flex
+  justify-content: flex-end
+  .txt-item
+    margin-right: 90px
+    width: 450px
+    display: flex
+    justify-content: space-between
+    .svg
+      width: 110px
+      height: auto
+      margin-right: 40px
+    .content
+      width: calc(100% - 150px)
+    &-title
+      font-size: 20px
+      line-height: 1.1
+      font-weight: 700
+      margin-bottom: 15px
+  .buttons-item
+    width: 240px
+    .btn
+      display: block
+      margin-bottom: 15px
+      &:last-child
+        margin-bottom: 0
