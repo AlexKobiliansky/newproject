@@ -72,4 +72,46 @@ ul
 .container
   background-color: green
 
+//MY_MFP_ZOOM_IN
+.my-mfp-zoom-in
+  .zoom-anim-dialog, .popup-form, .video-popup, .popup-privacy
+    opacity: 0
+    transition: all 0.5s ease-in-out
+    transform: scale(0.7)
+  &.mfp-ready .zoom-anim-dialog, &.mfp-ready .popup-form, &.mfp-ready .video-popup, &.mfp-ready .popup-privacy
+    opacity: 1
+    transform: scale(1)
+  &.mfp-removing .zoom-anim-dialog, &.mfp-removing .popup-form, &.mfp-removing .video-popup, &.mfp-removing .popup-privacy
+    transform: scale(0.7)
+    opacity: 0
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.5s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: .7
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
+.mfp-close-btn-in .mfp-close
+  color: #fff
+
+.slider-prev, .slider-next
+  height: 49px
+  width: 55px
+  background-color: #fff
+  background-image: url('../img/icons/arrow-black.svg')
+  background-size: 8px 14px
+  background-position: center center
+  background-repeat: no-repeat
+  border: none
+  box-shadow: none
+  cursor: pointer
+  +mt(.3s)
+  &:hover
+    background-color: $accent-dark
+    background-image: url('../img/icons/arrow-white.svg')
+
+.slider-prev
+  transform: rotate(180deg)
+
 

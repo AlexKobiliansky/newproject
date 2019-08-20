@@ -1,0 +1,98 @@
+.intro-slide
+  height: calc(100vh - 130px)
+  min-height: 680px
+  +bg-cover
+  position: relative
+  &-videolink
+    position: absolute
+    right: 530px
+    bottom: 0
+    width: 300px
+    height: 199px
+    +bg-cover
+    display: flex
+    justify-content: center
+    align-items: center
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      background-color: rgba(0, 0, 0, 0.5)
+    a
+      position: relative
+      z-index: 2
+      &:hover
+        .svg
+          opacity: 1
+    .svg
+      fill: #fff
+      +mt(.3s)
+      opacity: .5
+  &-desc
+    background-color: $accent-grey
+    color: #fff
+    font-size: 20px
+    font-weight: 500
+    padding: 35px 47px
+    position: absolute
+    bottom: 0
+    right: 830px
+    width: 540px
+  &-visual
+    position: absolute
+    background-color: #fff
+    right: 0
+    bottom: 0
+    width: 530px
+    padding: 27px 30px 27px 43px
+    .title
+      color: #000
+      font-size: 22px
+      margin-bottom: 15px
+    .left
+      width: 250px
+      font-size: 15px
+  .mobile-content
+    display: none
+
+.intro-slider
+  position: relative
+  .intro-prev, .intro-next
+    position: absolute
+    bottom: 149px
+    z-index: 2
+  .intro-prev
+    right: 475px
+  .intro-next
+    right: 420px
+  .progressBar
+    width: 125px
+    height: 3px
+    background-color: #c4c4c4
+    display: block
+    position: absolute
+    bottom: 50px
+    right: 85px
+
+    .inProgress
+      background-color: #000
+      width: 0%
+      height: 3px
+      position: relative
+      z-index: 2
+
+.s-intro
+  position: relative
+
+.intro-count
+  position: absolute
+  bottom: 39px
+  right: 31px
+  font-size: 18px
+  color: #e5e5e5
+  .current
+    font-size: 28px
+    color: $text

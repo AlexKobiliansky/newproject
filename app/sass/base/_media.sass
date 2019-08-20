@@ -11,12 +11,12 @@
   .head-name
     padding-left: 50px
 
-@media screen and (max-width: 1700px)
+@media screen and (max-width: 1600px)
   .head-name
     font-size: 22px
     padding-left: 30px
 
-@media screen and (max-width: 1700px)
+@media screen and (max-width: 1500px)
   .main-head
     margin-left: 250px
     width: calc(100% - 250px)
@@ -25,7 +25,7 @@
       img
         width: 90px
 
-@media screen and (max-width: 1700px)
+@media screen and (max-width: 1400px)
   .main-mnu
     padding: 40px 20px
     ul
@@ -35,12 +35,71 @@
     padding: 35px 30px
     .call
       font-size: 16px
-
   .head-name
     padding: 35px 20px
 
+  .intro-slide
+    height: calc(100vh - 109px)
+
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .intro-slider
+    .intro-prev, .intro-next
+      bottom: auto
+      top: 451px
+    .intro-next
+      right: 0
+    .intro-prev
+      right: 55px
+
+  .intro-count
+    bottom: auto
+    top: 530px
+
+  .progressBar
+    bottom: auto
+    top: 45px
+
+
+  .intro-slide
+    height: auto
+    min-height: inherit
+    background-image: none!important
+    .mobile-content
+      display: block
+      +bg-cover
+      height: 500px
+      position: relative
+      span
+        position: absolute
+        left: 30px
+        bottom: 30px
+        font-size: 29px
+        line-height: 34px
+        font-weight: 700
+        color: #fff
+    &-visual
+      position: relative
+      right: 0
+      bottom: 0
+      width: 100%
+      margin-bottom: 130px
+      .left
+        width: calc(100% - 250px)
+    &-desc
+      right: 0
+      bottom: 0
+      position: relative
+      width: 100%
+      padding-top: 200px
+    &-videolink
+      right: auto
+      left: 30px
+      width: 500px
+      height: 300px
+      bottom: 115px
+
   .head-name
     display: none
 
@@ -72,6 +131,51 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .intro-slide
+    .mobile-content
+      height: 400px
+      span
+        padding-right: 130px
+    &-visual
+      padding-left: 30px
+      margin-bottom: 40px
+      .left
+        width: 100%
+        font-size: 12px
+      .title
+        width: calc(100% - 150px)
+        font-size: 18px
+    &-videolink
+      width: 210px
+      height: 135px
+      bottom: 90px
+    &-desc
+      font-size: 12px
+      padding-top: 110px
+      padding-left: 30px
+      padding-right: 30px
+
+  .intro-count
+    top: 420px
+    .current
+      font-size: 24px
+
+
+
+
+  .intro-slider
+    .intro-prev, .intro-next
+      top: 365px
+      width: 40px
+      height: 35px
+    .intro-prev
+      right: 40px
+    .progressBar
+      width: 85px
+      top: 38px
+      right: 75px
+
   .mobile-mnu-container
     .name
       font-size: 14px

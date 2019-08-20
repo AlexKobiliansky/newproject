@@ -39,6 +39,8 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/magnificPopup/jquery.magnific-popup.min.js',
+		'app/libs/slick-slider/slick.min.js',
 		// 'app/libs/pixel-glass/pixel-glass.js',
 		'app/js/common.js', // Always at the end
 		])
