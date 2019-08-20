@@ -3,19 +3,97 @@
 
 /*==========  Desktop First  ==========*/
 
+@media screen and (max-width: 1700px)
+  .main-head
+    margin-left: 400px
+    width: calc(100% - 400px)
+
+  .head-name
+    padding-left: 50px
+
+@media screen and (max-width: 1700px)
+  .head-name
+    font-size: 22px
+    padding-left: 30px
+
+@media screen and (max-width: 1700px)
+  .main-head
+    margin-left: 250px
+    width: calc(100% - 250px)
+    .logo
+      left: -174px
+      img
+        width: 90px
+
+@media screen and (max-width: 1700px)
+  .main-mnu
+    padding: 40px 20px
+    ul
+      align-items: center
+
+  .head-contacts
+    padding: 35px 30px
+    .call
+      font-size: 16px
+
+  .head-name
+    padding: 35px 20px
+
 // ≥1200px
 +media-breakpoint-down(lg)
-  .container
-    background-color: red
+  .head-name
+    display: none
+
+  .main-mnu
+    flex-grow: 2
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .mobile-mnu-container
+    display: block
+
+  .main-head
+    width: 100%
+    margin-left: 0
+
+  .main-head
+    .logo
+      padding: 22px 22px 11px
+      left: 30px
+      img
+        width: 80px
+
+  .head-contacts, .main-mnu
+    display: none
 
 // ≥768px
 +media-breakpoint-down(sm)
 
 // ≥480px
 +media-breakpoint-down(xs)
+  .mobile-mnu-container
+    .name
+      font-size: 14px
+
+  .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+    width: 20px
+    height: 2px
+    border-radius: 2px
+
+  .hamburger--elastic
+    .hamburger-inner:before
+      top: 6px
+    .hamburger-inner:after
+      top: 12px
+
+  .hamburger-box
+    height: 18px
+    width: 20px
+  .hamburger
+    padding: 0
+    padding-left: 10px
+
 
 
 /*==========  Mobile First  ==========*/
