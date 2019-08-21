@@ -5,6 +5,47 @@
 
 @media screen and (max-width: 1700px)
 
+  .s-projects
+    .section-title
+      font-size: 44px
+      &:after
+        height: 6px
+        bottom: -10px
+
+  .project-item
+    &-top
+      flex-direction: column
+    &-title
+      width: 100%
+      margin-bottom: 10px
+      font-size: 17px
+    &-info
+      width: 100%
+      text-align: left
+      span
+        display: inline-block
+
+  .project-slide
+    &-img
+      width: 50%
+    &-content
+      width: 50%
+    &-title
+      font-size: 22px
+    &-chars
+      .char-value
+        font-size: 14px
+        span
+          font-size: 18px
+      .char-desc
+        font-size: 12px
+
+  .projects-slider
+    .intro-next
+      right: 50%
+    .intro-prev
+      right: calc(50% + 50px)
+
   .container, .container.right
     margin-left: 260px
     max-width: calc(100% - 340px)
@@ -17,6 +58,16 @@
     padding-left: 50px
 
 @media screen and (max-width: 1600px)
+
+
+  .projects-all-wrap
+    .half-part
+      width: calc(50% - 20px)
+
+  .project-item
+    width: calc(50% - 15px)
+    margin-bottom: 30px
+
   .head-name
     font-size: 22px
     padding-left: 30px
@@ -31,6 +82,33 @@
         width: 90px
 
 @media (max-width: 1400px)
+
+  .s-projects
+    .section-title
+      position: relative
+      margin-bottom: 110px
+      .btn
+        position: absolute
+        float: none
+        top: 80px
+        left: 0
+
+  .projects-slider
+    .intro-prev, .intro-next
+      bottom: auto
+      top: 200px
+    .intro-next
+      right: 0
+    .intro-prev
+      right: 50px
+
+  .project-slide
+    flex-direction: column
+    &-img
+      width: 100%
+      height: 240px
+    &-content
+      width: 100%
 
   section
     padding-top: 90px
@@ -82,6 +160,14 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .project-item
+    width: 100%
+    &-img
+      height: 300px
+
+  .timelaps
+    display: none
 
   .service-item-img
     height: 180px
@@ -156,6 +242,10 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .project-item
+    &-img
+      height: 220px
+
   .services-bottomline
     flex-wrap: wrap
     justify-content: space-between
@@ -212,6 +302,49 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .project-item
+    &-img
+      height: 300px
+    &-top
+      flex-direction: row
+    &-title
+      width: 60%
+    &-info
+      width: 40%
+      text-align: right
+      span
+        display: block
+
+  .project-items-wrap
+    display: none
+    &.mobile-content
+      display: block
+
+  .projects-all-wrap
+    flex-wrap: wrap
+    .half-part
+      width: 100%
+
+  .s-projects
+    padding-top: 60px
+    .section-title
+      margin-bottom: 60px
+      .btn
+        display: none
+    .btn-wrap.mobile-content
+      display: block
+      text-align: center
+      margin-top: 50px
+
+  .project-slide
+    &-img
+      height: 300px
+
+  .projects-slider
+    .intro-prev, .intro-next
+      top: 260px
+
   .services-bottomline
     .txt-item
       width: 100%
@@ -219,6 +352,39 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-projects
+    .section-title
+      font-size: 36px
+      padding-left: 30px
+      &:after
+        width: 160px
+        left: 55px
+    .container
+      margin-left: 0
+      margin-right: 0
+      max-width: 100%
+    .btn-wrap
+      padding-left: 30px
+      padding-right: 30px
+      .btn
+        width: 100%
+
+  .project-items-wrap
+    padding-left: 30px
+    padding-right: 30px
+
+  .project-item
+    margin-bottom: 40px
+    &-title
+      font-size: 16px
+    &-info
+      font-size: 10px
+    &-top
+      margin-bottom: 18px
+    &-img
+      height: 180px
+
 
   .details
     font-size: 14px

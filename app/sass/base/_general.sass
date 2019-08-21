@@ -164,5 +164,73 @@ section
 
 
 
+//timelaps
+.timelaps
+  position: fixed
+  left: 0
+  top: 0
+  +mt(.3s)
+  width: 130px
+  height: 100vh
+  background-color: #fff
+  z-index: 999
+  text-align: center
+  padding: 130px 15px 50px
 
+.timelaps-socials
+  position: absolute
+  bottom: 40px
+  width: calc(100% - 30px)
+  opacity: 1
+  +mt(.5s)
+  &.off
+    opacity: 0
+    pointer-events: none
+  .soc-item
+    display: block
+    margin-bottom: 15px
+    .svg
+      display: block
+      margin-left: auto
+      margin-right: auto
+      +mt(.3s)
+      fill: #000
+      width: 30px
+      height: auto
+    &:hover
+      .svg
+        fill: $accent-lightgrey
+
+#section-number
+  font-size: 18px
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    background-color: $text
+    height: 120px
+    width: 1px
+    top: calc(100% + 8px)
+    left: 50%
+
+.timelaps-scrolling
+  position: absolute
+  bottom: 50px
+  width: calc(100% - 30px)
+  +mt(.5s)
+  &.off
+    opacity: 0
+    pointer-events: none
+
+#scrollup
+  margin-bottom: 60px
+  cursor: pointer
+
+#scrolldown
+  cursor: pointer
+  .svg
+    width: 19px
+    height: auto
+
+//end timelaps
 

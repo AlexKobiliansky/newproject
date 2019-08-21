@@ -41,7 +41,8 @@ gulp.task('scripts', function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/magnificPopup/jquery.magnific-popup.min.js',
 		'app/libs/slick-slider/slick.min.js',
-		// 'app/libs/pixel-glass/pixel-glass.js',
+		'app/libs/scrollify/jquery.scrollify.js',
+		'app/libs/equalHeights/jquery.equalheights.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
@@ -60,7 +61,7 @@ gulp.task('rsync', function() {
 	.pipe(rsync({
 		root: 'app/',
 		hostname: 'alexko89@alexko89.beget.tech',
-		destination: 'demos.alexko89.beget.tech/public_html/dirname/',
+		destination: 'demos.alexko89.beget.tech/public_html/newproject/',
 		// include: ['*.htaccess'], // Includes files to deploy
 		exclude: ['**/Thumbs.db', '**/*.DS_Store'], // Excludes files from deploy
 		recursive: true,

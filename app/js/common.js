@@ -70,6 +70,25 @@ $(document).ready(function(){
 
 
 
+    $('.projects-slider').slick({
+        infinite: true,
+        autoplay: true,
+        adaptiveHeight: false,
+        autoplaySpeed: 8000,
+        prevArrow: '<button type="button" class="intro-prev slider-prev"></button>',
+        nextArrow: '<button type="button" class="intro-next slider-next"></button>',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    adaptiveHeight:true,
+                }
+            }
+
+        ]
+    });
+
+
 
 
     $('img.svg').each(function(){
@@ -105,6 +124,34 @@ $(document).ready(function(){
     });
 
 
+
+
+    function heightses() {
+
+        if ($(window).width()>=768) {
+            $('.txt-item-title').height('auto').equalHeights();
+            $('.project-slide-content').height('auto').equalHeights();
+        }
+
+        if ($(window).width()>=992) {
+            $('.service-item-title').height('auto').equalHeights();
+            $('.service-item-desc').height('auto').equalHeights();
+            $('.project-item-top').height('auto').equalHeights();
+        }
+
+
+
+
+
+    }
+    $(window).resize(function() {
+        heightses();
+    });
+    heightses();
+
+    /**
+     * VIDEO
+     */
     //youtube script
     var tag = document.createElement('script');
     tag.src = "//www.youtube.com/iframe_api";
@@ -180,4 +227,52 @@ $(document).ready(function(){
         });
         return false;
     });
+
+
+
+    // $.scrollify({
+    //     section : "section",
+    //     setHeights: false,
+    // });
+
+
+
+    $(document).on('scroll', function() {
+        var posDoc = $(this).scrollTop();
+        var index = $.scrollify.currentIndex();
+
+        if(index>0) {
+            $('#timelaps-socials').addClass('off');
+            $('.timelaps-scrolling').removeClass('off');
+        } else {
+            $('#timelaps-socials').removeClass('off');
+            $('.timelaps-scrolling').addClass('off');
+        }
+
+        $('section').each(function(){
+            var id = $(this).attr("id");
+            var topHeader = $(this).offset().top - 38;
+            var botHeader = topHeader + $(this).height() - 200;
+
+            if (
+                posDoc > topHeader &&
+                posDoc < botHeader &&
+                id
+            ) {
+                $('#section-number').text(id);
+            }
+        });
+    });
+
+    // $('#scrollup').on('click', function(){
+    //     $.scrollify.previous();
+    // });
+    //
+    // $('#scrolldown').on('click', function(){
+    //     $.scrollify.next();
+    // });
+
+
+
+
 });
