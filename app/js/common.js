@@ -262,10 +262,10 @@ $(document).ready(function(){
 
 
 
-    // $.scrollify({
-    //     section : "section",
-    //     setHeights: false,
-    // });
+    $.scrollify({
+        section : "section",
+        setHeights: false,
+    });
 
 
 
@@ -296,13 +296,13 @@ $(document).ready(function(){
         });
     });
 
-    // $('#scrollup').on('click', function(){
-    //     $.scrollify.previous();
-    // });
-    //
-    // $('#scrolldown').on('click', function(){
-    //     $.scrollify.next();
-    // });
+    $('#scrollup').on('click', function(){
+        $.scrollify.previous();
+    });
+
+    $('#scrolldown').on('click', function(){
+        $.scrollify.next();
+    });
 
 
     //===== geography =====//

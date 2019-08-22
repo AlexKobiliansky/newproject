@@ -5,6 +5,12 @@
 
 @media screen and (max-width: 1700px)
 
+  .footer-wrap
+    .left-part
+      width: 40%
+    .right-part
+      width: 60%
+
   .s-contacts-wrap
     .left-part
       width: 40%
@@ -272,6 +278,21 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .footer-wrap
+    padding-left: 0
+    .right-part
+
+  .ishome
+    .footer-wrap
+      .right-part
+        padding: 50px 0
+
+  .foot-soc
+    font-size: 20px
+
+  .copyright
+    font-size: 16px
+
   .contact-blocks
     font-size: 20px
 
@@ -404,6 +425,24 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .footer-wrap
+    flex-direction: column-reverse
+    .left-part
+      width: 100%
+      padding-top: 30px
+      padding-bottom: 30px
+    .right-part
+      width: 100%
+    .half-part
+      padding-left: 30px
+      padding-right: 30px
+
+  .ishome
+    .footer-wrap
+      .right-part
+        padding-top: 30px
+        padding-bottom: 30px
 
   .s-contacts-wrap
     flex-wrap: wrap
@@ -571,6 +610,20 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .footer-wrap
+    .left-part
+      padding: 55px 0 60px
+
+  .copyright
+    font-size: 14px
+
+  .foot-soc
+    font-size: 17px
+    margin-right: 30px
+    .svg
+      width: 24px
+      margin-left: 10px
 
   .contact-blocks
     font-size: 15px
