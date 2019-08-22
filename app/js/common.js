@@ -89,6 +89,38 @@ $(document).ready(function(){
     });
 
 
+    $('.team-slider').slick({
+        infinite: true,
+        autoplay: true,
+        adaptiveHeight: true,
+        autoplaySpeed: 8000,
+        prevArrow: '<button type="button" class="intro-prev slider-prev"></button>',
+        nextArrow: '<button type="button" class="intro-next slider-next"></button>',
+        slidesToShow: 4,
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }
+
+        ]
+    });
+
+
 
 
     $('img.svg').each(function(){

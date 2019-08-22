@@ -1,0 +1,73 @@
+.s-team
+  padding: 0
+
+.team-top
+  padding: 120px 0 80px
+  +bg-cover
+
+.team-wrap
+  display: flex
+  .half-part
+    width: 50%
+  .right-part
+    display: flex
+    justify-content: flex-end
+    align-items: flex-end
+
+.team-gen-img
+  width: 250px
+  margin-left: 65px
+  margin-bottom: 0
+
+.team-gen-name
+  font-size: 36px
+  color: #000
+  margin-bottom: 10px
+  font-weight: 700
+
+.team-gen-post
+  font-size: 24px
+
+.team-desc
+  color: #000
+  font-size: 18px
+  margin-top: 88px
+  padding-right: 180px
+  p
+    margin-bottom: 30px
+    &:last-child
+      margin-bottom: 0
+
+.team-bottom
+  background-color: #494748
+  color: #fff
+  padding: 50px 0 110px
+
+.team-slider
+  position: relative
+  .slick-list
+    margin: 0 -30px
+  .intro-prev, .intro-next
+    position: absolute
+    top: -99px
+    background-color: #494848
+    background-image: url('../img/icons/arrow-white.svg')
+    &:hover
+      background-color: $accent-dark
+  .intro-next
+    right: 0
+  .intro-prev
+    right: 55px
+
+.team-slide
+  margin: 0 30px
+  &-img
+    +bg-cover
+    height: 177px
+    margin-bottom: 18px
+  &-name
+    font-weight: 700
+    font-size: 24px
+  &-post
+    color: $accent-lightgrey
+    font-size: 18px

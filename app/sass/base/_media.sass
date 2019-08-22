@@ -5,6 +5,14 @@
 
 @media screen and (max-width: 1700px)
 
+  .team-gen-img
+    margin-left: 30px
+
+  .team-gen-name
+    font-size: 32px
+  .team-gen-post
+    font-size: 20px
+
   .s-geography
     .section-title
       font-size: 50px
@@ -115,6 +123,27 @@
     padding-left: 30px
 
 @media screen and (max-width: 1500px)
+
+  .team-slider
+    .slick-list
+      margin: 0 -15px
+
+  .team-slide
+    margin: 0 15px
+    &-name
+      font-size: 20px
+      margin-bottom: 3px
+    &-post
+      font-size: 16px
+
+  .team-wrap
+    .left-part
+      width: 40%
+    .right-part
+      width: 60%
+
+  .team-desc
+    padding-right: 30px
 
   .main-mnu
     flex-grow: 2
@@ -235,7 +264,11 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .team-bottom
+    padding-bottom: 50px
 
+  .team-top
+    padding-top: 70px
 
   .geography-map
     text-align: center
@@ -343,6 +376,22 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+
+
+  .team-wrap
+    flex-direction: column
+    .half-part
+      width: 100%
+    .right-part
+      margin-top: 30px
+      flex-direction: row-reverse
+
+  .team-gen-img
+    margin-left: 0
+    max-width: 50%
+    margin-right: 20px
+
+
   .section-title
     span
       padding-left: 0
@@ -421,6 +470,9 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .team-bottom
+    padding-bottom: 50px
+
   .section-title
     span
       font-size: 16px
@@ -479,6 +531,35 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .team-bottom
+    padding: 40px 0
+
+  .team-slider
+    .intro-prev, .intro-next
+      width: 40px
+      height: 40px
+      background-size: 5px 10px
+      top: -80px
+    .intro-next
+      right: -30px
+    .intro-prev
+      right: 10px
+
+  .team-top
+    padding-top: 60px
+
+  .team-desc
+    margin-top: 60px
+    font-size: 10px
+    p
+      margin-bottom: 20px
+
+  .team-gen-name
+    font-size: 22px
+
+  .team-gen-post
+    font-size: 14px
 
   .geo-total
     margin-top: 20px
