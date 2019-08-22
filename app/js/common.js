@@ -1,5 +1,51 @@
 $(document).ready(function(){
 
+    /**
+     * mobile-mnu customization
+     */
+    var mmenu = $('#mobile-mnu');
+    var menuLogo = mmenu.data("logo");
+    var $mmenu = mmenu.mmenu({
+        navbars: [{
+            content: [ "<img src=" + menuLogo + " class=\"img-responsive mm-logo\" alt=\"alt\"/>" ],
+            height: 3
+        }],
+        "pageScroll": true,
+
+        "navbar": {
+            "title" : "",
+        },
+        "extensions": [
+            "theme-dark",
+            "pagedim-black",
+            "position-front",
+            "fx-listitems-slide",
+        ],
+    }, {
+        offCanvas: {
+            pageSelector: "#page-container"
+        },
+    });
+
+    var mmenuBtn = $("#mmenu-btn");
+    var API = $mmenu.data("mmenu");
+
+    mmenuBtn.click(function() {
+        API.open();
+        $(this).addClass('is-active')
+    });
+
+
+    API.bind( "close:start", function() {
+        setTimeout(function() {
+            mmenuBtn.removeClass( "is-active" );
+        }, 300);
+    });
+    /**
+     * end mobile-mnu customization
+     */
+
+
     var $curentSlide = $('#intro-count .current');
     var $totalSlides = $('#intro-count .total');
     var $introSlider = $('.intro-slider');
@@ -181,6 +227,9 @@ $(document).ready(function(){
     });
     heightses();
 
+
+    $('.preloader').fadeOut();
+
     /**
      * VIDEO
      */
@@ -244,7 +293,19 @@ $(document).ready(function(){
      */
 
 
+    var uPhone = $('.user-phone');
+    uPhone.mask("+7 (999) 999-99-99",{autoclear: false});
 
+    uPhone.on('click', function (ele) {
+        var needelem = ele.target || event.srcElement;
+        needelem.setSelectionRange(4,4);
+        needelem.focus();
+    });
+
+    $.validate({
+        form : '.contact-form',
+        scrollToTopOnError: false
+    });
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change
@@ -297,8 +358,8 @@ $(document).ready(function(){
 
         $('section').each(function(){
             var id = $(this).attr("id");
-            var topHeader = $(this).offset().top;
-            var botHeader = topHeader + $(this).height();
+            var topHeader = $(this).offset().top - 50;
+            var botHeader = topHeader + $(this).height() - 50;
 
             if (
                 posDoc > topHeader &&
@@ -314,8 +375,6 @@ $(document).ready(function(){
                 }
 
             }
-
-
         });
     });
 
