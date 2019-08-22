@@ -71,7 +71,10 @@
     padding-left: 50px
 
 @media screen and (max-width: 1600px)
-
+  .client-item
+    margin-left: 0
+    margin-right: 0
+    width: calc(25% - 50px)
 
   .projects-all-wrap
     .half-part
@@ -108,6 +111,12 @@
         width: 90px
 
 @media (max-width: 1400px)
+
+  .clients-wrap
+    margin-top: 100px
+
+  .client-item
+    width: calc(25% - 30px)
 
   .intro-slide-desc
     width: 280px
@@ -285,6 +294,14 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .section-title
+    span
+      padding-left: 0
+
+  .client-item
+    width: calc(25% - 10px)
+    margin-bottom: 20px
+
   .chars-wrap
     flex-wrap: wrap
     justify-content: space-between
@@ -355,6 +372,15 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .section-title
+    span
+      font-size: 16px
+      line-height: 1.2
+
+  .client-item
+    width: calc(50% - 10px)
+    margin-bottom: 20px
+
   .project-item
     &-img
       height: 300px
@@ -404,6 +430,16 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .section-title
+    span
+      padding-left: 25px
+
+  .clients-wrap
+    margin-top: 65px
+
+  .client-item
+    padding: 20px 30px
 
   .s-chars
     padding: 40px 0 10px
