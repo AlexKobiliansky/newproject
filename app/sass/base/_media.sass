@@ -5,6 +5,32 @@
 
 @media screen and (max-width: 1700px)
 
+  .s-geography
+    .section-title
+      font-size: 50px
+
+  .geo-sities
+    margin-top: 80px
+    padding-right: 0
+    font-size: 20px
+    .city
+      margin-bottom: 9px
+
+  .geo-subsities
+    padding-right: 0
+    font-size: 18px
+    margin-bottom: 7px
+    padding-left: 53px
+    .city
+      padding: 0 7px
+
+  .geo-total
+    font-size: 18px
+    margin-right: 0
+    &-item
+      width: 48%
+
+
   .chars-wrap
     padding: 0
   .char-item
@@ -112,6 +138,13 @@
 
 @media (max-width: 1400px)
 
+  .s-geography
+    .section-title
+      font-size: 45px
+
+  .geo-total
+    font-size: 16px
+
   .clients-wrap
     margin-top: 100px
 
@@ -201,6 +234,22 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+
+
+  .geography-map
+    text-align: center
+
+  .s-geography
+    .desktop-content
+      display: none
+    .mobile-content
+      display: block
+
+  .geography-wrap
+    flex-wrap: wrap
+    .half-part
+      width: 100%
 
 
 
@@ -430,6 +479,57 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .geo-total
+    margin-top: 20px
+    font-size: 12px
+    &-item
+      width: 100%
+      padding-left: 30px
+
+  .geo-city-marker
+    font-size: 14px
+    padding: 3px 3px 5px 14px
+    border-radius: 5px
+    .svg
+      width: 11px
+      height: auto
+    &.subcity-maker
+      font-size: 12px
+      .svg
+        width: 9px
+
+  .s-geography
+    .section-title
+      font-size: 36px
+
+  .geography-desc
+    font-size: 10px
+    margin-top: 65px
+
+  .geo-sities
+    font-weight: 700
+    font-size: 12px
+    padding-left: 25px
+    margin-top: 10px
+    .city
+      padding: 0 7px
+      border-width: 1px
+      margin-bottom: 7px
+    &:before
+      width: 18px
+      height: 26px
+      +bg-cover
+
+  .geo-subsities
+    padding-left: 25px
+    font-size: 12px
+    .city
+      padding: 0 3px
+    &:before
+      +bg-cover
+      width: 12px
+      height: 18px
 
   .section-title
     span

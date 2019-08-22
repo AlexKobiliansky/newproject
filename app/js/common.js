@@ -273,6 +273,38 @@ $(document).ready(function(){
     // });
 
 
+    //===== geography =====//
+    $('.city').on('click', function(e){
+        e.preventDefault();
+        var th = $(this);
+        var allCities = $('.geo-sities');
+        var allSubCities = $('.geo-subsities');
+        var markerId = th.data('src');
+        console.log(markerId);
 
+
+        allCities.find('.city').removeClass('active');
+        allSubCities.find('.city').removeClass('active');
+
+        $('.geo-city-marker').removeClass('active');
+        $('#'+markerId).addClass('active');
+
+        th.addClass('active');
+    });
+
+
+    $('.geo-city-marker').on('click', function(){
+       var th = $(this);
+       var id = th.attr('id');
+
+        $('.geo-city-marker').removeClass('active');
+        th.addClass('active');
+
+        $('.city').removeClass('active');
+        $('.s-geography').find('a[data-src=' +id+ ']').addClass('active');
+
+    });
+
+    //===== /geography =====//
 
 });
