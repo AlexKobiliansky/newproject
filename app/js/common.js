@@ -322,69 +322,70 @@ $(document).ready(function(){
     });
 
 
-
-    $.scrollify({
-        section : "section",
-        setHeights: false,
-    });
-
-
-
-    $(document).on('scroll', function() {
-        var posDoc = $(this).scrollTop();
-        var index = $.scrollify.currentIndex();
-
-
-
-        if(index>0) {
-            $('#timelaps-socials').addClass('off');
-            $('.timelaps-scrolling').removeClass('off');
-        } else {
-            $('#timelaps-socials').removeClass('off');
-            $('.timelaps-scrolling').addClass('off');
-        }
-
-        if((index == 7)){
-            $('#totop').addClass('on');
-            $('.timelaps-scrolling').addClass('off');
-        } else {
-            $('#totop').removeClass('on');
-            $('.timelaps-scrolling').removeClass('off');
-        }
-
-        if(index==0) {
-            $('.timelaps-scrolling').addClass('off');
-        }
-
-        $('section').each(function(){
-            var id = $(this).attr("id");
-            var topHeader = $(this).offset().top - 50;
-            var botHeader = topHeader + $(this).height() - 50;
-
-            if (
-                posDoc > topHeader &&
-                posDoc < botHeader &&
-                id
-            ) {
-                $('#section-number').text(id);
-
-                if($(this).hasClass('dark-section') == true){
-                    $('.timelaps').addClass('dark')
-                } else {
-                    $('.timelaps').removeClass('dark')
-                }
-
-            }
+    if ($(window).width()>=992) {
+        $.scrollify({
+            section : ".ishome section",
+            setHeights: false,
         });
-    });
 
-    $('#scrollup').on('click', function(){
-        $.scrollify.previous();
-    });
+        $(document).on('scroll', function() {
+            var posDoc = $(this).scrollTop();
+            var index = $.scrollify.currentIndex();
 
-    $('#scrolldown').on('click', function(){
-        $.scrollify.next();
-    });
+
+
+            if(index>0) {
+                $('#timelaps-socials').addClass('off');
+                $('.timelaps-scrolling').removeClass('off');
+            } else {
+                $('#timelaps-socials').removeClass('off');
+                $('.timelaps-scrolling').addClass('off');
+            }
+
+            if((index == 7)){
+                $('#totop').addClass('on');
+                $('.timelaps-scrolling').addClass('off');
+            } else {
+                $('#totop').removeClass('on');
+                $('.timelaps-scrolling').removeClass('off');
+            }
+
+            if(index==0) {
+                $('.timelaps-scrolling').addClass('off');
+            }
+
+            $('section').each(function(){
+                var id = $(this).attr("id");
+                var topHeader = $(this).offset().top - 50;
+                var botHeader = topHeader + $(this).height() - 50;
+
+                if (
+                    posDoc > topHeader &&
+                    posDoc < botHeader &&
+                    id
+                ) {
+                    $('#section-number').text(id);
+
+                    if($(this).hasClass('dark-section') == true){
+                        $('.timelaps').addClass('dark')
+                    } else {
+                        $('.timelaps').removeClass('dark')
+                    }
+
+                }
+            });
+        });
+
+        $('#scrollup').on('click', function(){
+            $.scrollify.previous();
+        });
+
+        $('#scrolldown').on('click', function(){
+            $.scrollify.next();
+        });
+    }
+
+
 
     /**
      * toTop functionality start
