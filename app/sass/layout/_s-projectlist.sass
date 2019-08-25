@@ -1,0 +1,261 @@
+.s-projectlist
+  background-color: #f9f9f9
+
+
+.side-project
+  margin-bottom: 37px
+  &-img
+    position: relative
+    height: 250px
+    +bg-cover
+    margin-bottom: 27px
+    .details
+      position: absolute
+      right: 0
+      bottom: 0
+      opacity: 0
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      background-color: #000
+      opacity: 0
+      +mt(.3s)
+    &:hover
+      .details
+        opacity: 1
+      &:after
+        opacity: .4
+  &-title
+    font-size: 20px
+    font-weight: 700
+    color: #000
+    margin-bottom: 3px
+    display: inline-block
+    &:hover
+      text-decoration: underline
+      color: #000
+  &-date
+    font-size: 13px
+
+
+.side-projectslist
+  background-color: #fff
+  padding: 65px 30px
+  border: 2px solid #e5e5e5
+  .title
+    font-size: 36px
+    color: #000
+    font-weight: 700
+    margin-bottom: 35px
+
+.side-project-item
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  color: #000
+  margin-bottom: 6px
+  .num
+    width: 45px
+    height: 25px
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 1px solid #000
+    border-radius: 5px
+  .name
+    color: #000
+    text-decoration: underline
+    width: calc(100% - 60px)
+    &:hover
+      color: #000
+      text-decoration: none
+
+.projectlist-slider-wrap
+  display: flex
+  justify-content: space-between
+  margin-bottom: 65px
+
+.projectlist-slide
+  +bg-cover
+  height: 380px
+
+.projectlist-nav
+  width: 180px
+  cursor: pointer
+  .nav-item
+    height: 120px
+    margin-bottom: 10px
+    +bg-cover
+
+.projectlist-slider
+  width: calc(100% - 220px)
+
+.projectlist-sorting
+  display: flex
+  justify-content: space-between
+  a
+    +mt(.3s)
+    font-size: 18px
+    line-height: 21px
+    color: #000
+    background-color: transparent
+    border: 2px solid #000
+    padding: 14px 30px 15px
+    white-space: nowrap
+    &:hover
+      background-color: #000
+      color: #fff
+
+.projectlist-items-wrap
+  margin-top: 90px
+
+.projectlist-item
+  display: flex
+  justify-content: space-between
+  margin-bottom: 100px
+  &-img
+    +bg-cover
+    width: 58%
+  &-content
+    width: 38%
+  &-title
+    font-size: 24px
+    font-weight: 700
+    padding-bottom: 21px
+    border-bottom: 2px solid $accent-grey
+    margin-bottom: 9px
+    color: #000
+  &-topline
+    margin-bottom: 35px
+    display: flex
+    justify-content: space-between
+  &-adres
+    width: 70%
+    font-size: 18px
+    color: $accent-grey
+  &-date
+    text-align: right
+    font-size: 13px
+    span
+      display: block
+      &:first-child
+        font-weight: 700
+  &-desc
+    font-size: 14px
+    margin-bottom: 20px
+  &-bottom
+    .btn
+      position: relative
+      top: 5px
+
+
+
+.project-popup
+  position: relative
+  display: block
+  background-color: #fff
+  width: 100%
+  max-width: 830px
+  margin-left: auto
+  margin-right: 0
+  &-top
+    +bg-cover
+    height: 320px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.88) 81.77%, #FFFFFF 95.31%)
+    .btn
+      position: absolute
+      right: 145px
+      bottom: 37px
+  &-content
+    padding: 11px 145px 115px 165px
+    font-size: 14px
+    color: #000
+  &-adres
+    font-size: 18px
+    color: $accent-grey
+    margin-bottom: 23px
+  &-title
+    font-size: 36px
+    font-weight: 700
+    margin-bottom: 55px
+  &-span
+    margin-bottom: 33px
+    h4
+      font-size: 18px
+      margin-bottom: 10px
+    &>span
+      font-size: 52px
+      position: relative
+      //margin-bottom: 33px
+      display: inline-block
+      span
+        font-size: 14px
+        color: $accent-grey
+        position: absolute
+        left: 0
+        bottom: -8px
+  img
+    display: block
+    width: 100%
+    max-width: 100%
+    margin: 40px auto
+  &-chars
+    margin-top: 60px
+    border-top: 2px solid #000
+    padding-top: 30px
+    margin-bottom: 50px
+  .btn-wrap
+    text-align: right
+
+.popup-char
+  display: flex
+  justify-content: space-between
+  color: $accent-grey
+  margin-bottom: 12px
+  &-desc
+    width: 50%
+  &-val
+    width: 50%
+    text-align: right
+
+#project-popup-map
+  height: 270px
+  margin-top: 35px
+  margin-bottom: 30px
+
+.close-popup-project
+  border: 2px solid #000
+  width: 30px
+  height: 30px
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: transparent
+  cursor: pointer
+  position: absolute
+  left: 46px
+  top: 386px
+  +mt(.3s)
+  z-index: 2
+  .svg
+    fill: #000
+    +mt(.3s)
+  &:hover
+    background-color: #000
+    .svg
+      fill: #fff
+
+
+

@@ -103,14 +103,14 @@ section
 
 //MY_MFP_ZOOM_IN
 .my-mfp-zoom-in
-  .zoom-anim-dialog, .popup-form, .video-popup, .popup-privacy
+  .zoom-anim-dialog, .popup-form, .video-popup
     opacity: 0
     transition: all 0.5s ease-in-out
     transform: scale(0.7)
-  &.mfp-ready .zoom-anim-dialog, &.mfp-ready .popup-form, &.mfp-ready .video-popup, &.mfp-ready .popup-privacy
+  &.mfp-ready .zoom-anim-dialog, &.mfp-ready .popup-form, &.mfp-ready .video-popup
     opacity: 1
     transform: scale(1)
-  &.mfp-removing .zoom-anim-dialog, &.mfp-removing .popup-form, &.mfp-removing .video-popup, &.mfp-removing .popup-privacy
+  &.mfp-removing .zoom-anim-dialog, &.mfp-removing .popup-form, &.mfp-removing .video-popup
     transform: scale(0.7)
     opacity: 0
   &.mfp-bg
@@ -120,6 +120,27 @@ section
     opacity: .7
   &.mfp-removing.mfp-bg
     opacity: 0
+
+
+
+.project-zoom-in
+  .zoom-anim-dialog, .project-popup
+    opacity: 1
+    transition: all 0.5s ease-in-out
+    right: -100%
+  &.mfp-ready .zoom-anim-dialog, &.mfp-ready .project-popup
+    right: -8px
+  &.mfp-removing .zoom-anim-dialog, &.mfp-removing .project-popup
+    right: -100%
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.5s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: .7
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
+
 
 .mfp-close-btn-in .mfp-close
   color: #fff
@@ -151,6 +172,7 @@ section
   padding: 14px 33px 14px 54px
   position: relative
   +mt(.3s)
+  z-index: 2
   &:before
     content: ''
     position: absolute
@@ -254,4 +276,12 @@ section
     opacity: 0
 
 //end preloader
+
+.page-wrapper
+  display: flex
+  justify-content: space-between
+  .page-sidebar
+    width: 400px
+  .page-content
+    width: calc(100% - 460px)
 
