@@ -1,0 +1,90 @@
+.s-blogslider
+  background-color: #f9f9f9
+  .container
+    position: relative
+
+
+.blog-slider
+  position: relative
+  .progressBar1
+    width: 125px
+    height: 3px
+    background-color: #c4c4c4
+    display: block
+    position: absolute
+    bottom: 23px
+    right: 185px
+    .inProgress-b
+      background-color: #fff
+      width: 0%
+      height: 3px
+      position: relative
+      z-index: 2
+  .intro-prev, .intro-next
+    position: absolute
+    bottom: 0
+    z-index: 2
+  .intro-next
+    right: 1px
+  .intro-prev
+    right: 56px
+
+.blog-slide
+  +bg-cover
+  height: 500px
+  position: relative
+
+.blogslider-count
+  position: absolute
+  font-size: 18px
+  color: #C4C4C4
+  top: 456px
+  right: 133px
+  z-index: 2
+  .current
+    font-size: 28px
+    color: #fff
+
+
+.blogslider-nav
+  display: flex
+  justify-content: space-between
+  border-left: 1px solid #c4c4c4
+  .blogslider-nav-item
+    background-color: #fff
+    flex-grow: 2
+    border-right: 1px solid #c4c4c4
+    border-bottom: 2px solid #c4c4c4
+    cursor: pointer
+    +mt(.3s)
+    padding: 28px 28px 28px 81px
+    .nav-item-title
+      color: #000
+      margin-bottom: 15px
+      +mt(.3s)
+    .nav-item-bottom
+      +mt(.3s)
+      color: #c4c4c4
+      font-size: 12px
+    .nav-item-cat
+      display: inline-block
+      position: relative
+      text-transform: uppercase
+      font-weight: 700
+      margin-right: 50px
+      &:after
+        content: '/'
+        position: absolute
+        right: -29px
+    .nav-item-date
+      display: inline-block
+    &.active
+      background-color: #494848
+      .nav-item-title
+        color: #fff
+      .nav-item-bottom
+        color: #fff
+
+
+
+

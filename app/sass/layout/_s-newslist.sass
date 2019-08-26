@@ -1,0 +1,153 @@
+.s-newslist
+  background-color: #f9f9f9
+  padding-top: 80px
+
+.main-news-item
+  border: 2px solid #C4C4C4
+  margin-bottom: 100px
+  &-img
+    +bg-cover
+    height: 510px
+  &-content
+    padding: 32px 50px 50px 140px
+    background-color: #fff
+  &-title
+    font-size: 30px
+    font-weight: 700
+    color: #000
+    margin-bottom: 15px
+  &-line
+    font-size: 18px
+    color: #c4c4c4
+    margin-bottom: 25px
+    .category
+      display: inline-block
+      text-transform: uppercase
+      margin-right: 50px
+      position: relative
+      font-weight: 700
+      &:after
+        content: '/'
+        position: absolute
+        right: -30px
+    .date
+      display: inline-block
+  &-desc
+    margin-bottom: 50px
+    color: $accent-grey
+
+
+.news-item
+  display: flex
+  justify-content: space-between
+  margin-bottom: 100px
+  &-img
+    +bg-cover
+    width: 60%
+  &-content
+    background-color: transparent
+    width: 40%
+    padding-left: 50px
+  &-title
+    font-size: 24px
+    color: #000
+    font-weight: 700
+    padding-bottom: 20px
+    border-bottom: 2px solid $accent-grey
+    margin-bottom: 10px
+  &-line
+    color: #c4c4c4
+    font-size: 18px
+    display: flex
+    margin-bottom: 45px
+    .category
+      width: 70%
+      text-transform: uppercase
+    .date
+      text-align: right
+      width: 30%
+  &-desc
+    font-size: 14px
+    color: $accent-grey
+    margin-bottom: 30px
+  .btn-wrap
+    text-align: right
+    .btn
+      position: relative
+      top: 5px
+
+.side-categories
+  background-color: #fff
+  border: 2px solid #E5E5E5
+  color: #000
+  margin-bottom: 40px
+  h3
+    font-size: 36px
+    font-weight: 700
+    padding: 24px 38px
+    border-bottom: 1px solid #E5E5E5
+  .side-cats-wrap
+    padding: 22px 38px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.side-cat
+  width: calc(50% - 12px)
+  display: flex
+  justify-content: space-between
+  font-size: 14px
+  margin-bottom: 20px
+  &-num
+    margin-left: 10px
+  &-name
+    color: #000
+    &:hover
+      text-decoration: underline
+
+.side-populars
+  background-color: #fff
+  border: 2px solid #E5E5E5
+  margin-bottom: 40px
+  h3
+    font-size: 36px
+    font-weight: 700
+    padding: 24px 38px
+    border-bottom: 1px solid #E5E5E5
+    color: #000
+
+.pop-items-wrap
+  padding: 0 40px
+
+.pop-item
+  display: flex
+  justify-content: space-between
+  padding: 25px 0
+  border-bottom: 1px solid #E5E5E5
+  &-img
+    +bg-cover
+    width: 110px
+  &-content
+    padding-left: 28px
+  &-title
+    font-size: 16px
+    color: #000
+    display: inline-block
+    margin-bottom: 20px
+    &:hover
+      text-decoration: underline
+      color: #000
+  &-line
+    display: flex
+    justify-content: space-between
+    color: #c4c4c4
+    font-size: 12px
+    .category
+      width: 70%
+      text-transform: uppercase
+      font-weight: 700
+    .date
+      text-align: right
+  &:last-child
+    border-bottom: none
+
