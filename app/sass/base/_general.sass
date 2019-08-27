@@ -77,6 +77,17 @@ ul
 section
   padding-top: 120px
   +bg-cover
+  &.dark-after
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      width: 100px
+      height: 100%
+      right: 0
+      top: 0
+      background-color: $accent-dark
+
 
 .section-title
   font-size: 64px
@@ -285,3 +296,35 @@ section
   .page-content
     width: calc(100% - 460px)
 
+
+.consult
+  padding: 22px 30px
+  background-color: #737373
+  color: #fff
+  font-size: 20px
+  font-weight: 700
+  line-height: 1.1
+  display: inline-block
+  max-width: 295px
+  z-index: 4
+  &.active
+    a
+      width: 140px
+      opacity: 1
+      margin-right: 45px
+  a
+    display: inline-block
+    color: #fff
+    margin-right: 0
+    transition: width .3s ease, margin .3s ease, opacity .6s ease-in, opacity 0s ease-out
+    max-width: 140px
+    width: 0
+    opacity: 0
+    &:hover
+      color: #e5e5e5
+  .svg
+    width: 36px
+    height: auto
+    cursor: pointer
+    position: relative
+    z-index: 5

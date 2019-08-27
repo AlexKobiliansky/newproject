@@ -138,6 +138,18 @@
 
 @media screen and (max-width: 1600px)
 
+  .s-clients.dark-after
+    &:after
+      width: 60px
+    .consult
+      padding: 10px 15px
+      font-size: 16px
+      .svg
+        width: 27px
+      &.active
+        a
+          width: 90px
+
   .footer-contacts
     a
       font-size: 18px
@@ -393,6 +405,13 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-clients.dark-after
+    &:after
+      display: none
+    .consult
+      display: none
+
+
   .article-bottom
     .tags
       font-size: 14px
@@ -594,6 +613,9 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .consult
+    display: none
 
   .side-project-img
     height: 350px
@@ -804,6 +826,9 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .popup-form
+    padding: 30px 50px
+
   .side-project-img
     height: 240px
 
@@ -924,6 +949,29 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .popup-form
+    padding: 30px 15px
+
+  .s-clients.dark-after
+    .consult, .consult.active
+      padding: 22px 55px
+      font-size: 20px
+      display: flex
+      align-items: center
+      justify-content: center
+      position: relative
+      right: auto
+      bottom: auto
+      max-width: 100%
+
+      span
+        pointer-events: none
+      .svg
+        width: 36px
+      a
+        width: auto
+        max-width: 100%
 
   .side-project-title
     font-size: 16px
