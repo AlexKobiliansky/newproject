@@ -1,0 +1,121 @@
+.article
+  border: 1px solid #C4C4C4
+  margin-bottom: 70px
+  &-img
+    +bg-cover
+    height: 510px
+  &-content-wrap
+    background-color: #fff
+    padding: 30px 50px 70px 140px
+  &-title
+    font-size: 30px
+    color: #000
+    font-weight: 700
+    margin-bottom: 15px
+  &-line
+    color: #C4C4C4
+    margin-bottom: 30px
+    .category
+      display: inline-block
+      text-transform: uppercase
+      font-weight: 700
+      margin-right: 50px
+      position: relative
+      &:after
+        content: '/'
+        position: absolute
+        right: -30px
+        font-weight: normal
+    .date
+      display: inline-block
+  &-content
+    color: $accent-grey
+    h3
+      text-transform: uppercase
+      font-weight: normal
+      margin-bottom: 20px
+    ul
+      margin-bottom: 15px
+    ol
+      padding-left: 15px
+      margin-bottom: 15px
+    a
+      color: #000
+      &:hover
+        text-decoration: underline
+  &-bottom
+    margin-top: 100px
+    display: flex
+    .tags
+      width: 50%
+      font-size: 18px
+      text-transform: uppercase
+      span
+        color: $accent-dark
+        font-weight: 500
+    .share
+      width: 50%
+      text-align: right
+      font-size: 20px
+      color: #969696
+      font-weight: 500
+      span
+        display: inline-block
+        margin-right: 40px
+      &-item
+        display: inline-block
+        margin-right: 8px
+        position: relative
+        top: 8px
+        .svg
+          width: 30px
+          height: auto
+          fill: #969696
+          +mt(.3s)
+        &:hover
+          .svg
+            fill: #737373
+
+.similar
+  padding-bottom: 40px
+  h3
+    text-align: center
+    color: #000
+    font-size: 36px
+    font-weight: 700
+    margin-bottom: 30px
+
+.sim-items-wrap
+  display: flex
+  justify-content: space-between
+
+.sim-item
+  margin-bottom: 20px
+  border: 1px solid #C4C4C4
+  width: calc(25% - 11px)
+  &-img
+    height: 160px
+    +bg-cover
+  &-content
+    background-color: #fff
+    padding: 25px 20px 18px
+  &-title
+    color: #000
+    margin-bottom: 15px
+    display: inline-block
+    &:hover
+      color: #000
+      text-decoration: underline
+  &-line
+    color: #c4c4c4
+    display: flex
+    justify-content: space-between
+    font-size: 12px
+    .category
+      text-transform: uppercase
+      font-weight: 700
+    .date
+      text-align: right
+
+
+

@@ -4,11 +4,18 @@
 /*==========  Desktop First  ==========*/
 
 @media screen and (max-width: 1800px)
-  //.container, .container.right
-  //  margin-left: 260px
-  //  max-width: calc(100% - 340px)
+  .container, .container.right
+    margin-left: 260px
+    max-width: calc(100% - 340px)
 
 @media screen and (max-width: 1700px)
+
+  .sim-items-wrap
+    flex-wrap: wrap
+
+  .sim-item
+    width: calc(50% - 20px)
+    margin-bottom: 40px
 
   .main-foot
     form
@@ -261,6 +268,12 @@
 
 @media (max-width: 1400px)
 
+  .article
+    &-img
+      height: 350px
+    &-content-wrap
+      padding-left: 50px
+
   .projectlist-item
     &-img
       width: 43%
@@ -392,6 +405,17 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .article-bottom
+    .tags
+      font-size: 14px
+    .share
+      font-size: 16px
+      span
+        margin-right: 10px
+    .share-item
+      .svg
+        width: 25px
 
   .news-item
     flex-direction: column
@@ -584,6 +608,38 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .side-project-img
+    height: 350px
+
+  .side-projectslist
+    margin-bottom: 30px
+
+  .side-flex
+    display: flex
+    justify-content: space-between
+  .side-categories
+    display: inline-block
+    width: 49%
+    vertical-align: top
+  .side-populars
+    display: inline-block
+    width: 49%
+    vertical-align: top
+
+  .page-wrapper
+    flex-wrap: wrap
+    .page-content
+      width: 100%
+    .page-sidebar
+      width: 100%
+
+  .article-title
+    font-size: 24px
+
+  .sim-item
+    width: calc(50% - 10px)
+    margin-bottom: 20px
+
   .main-news-item
     &-content
       padding: 20px 25px
@@ -632,12 +688,6 @@
     justify-content: space-between
     .nav-item
       width: calc(33.333% - 7px)
-
-  .page-wrapper
-    .page-sidebar
-      width: 250px
-    .page-content
-      width: calc(100% - 280px)
 
   .isnohome
     .main-head
@@ -767,6 +817,25 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .side-project-img
+    height: 240px
+
+  .side-flex
+    flex-wrap: wrap
+
+  .pop-item
+    justify-content: flex-start
+
+
+  .side-categories
+    display: inline-block
+    width: 100%
+    vertical-align: top
+  .side-populars
+    display: inline-block
+    width: 100%
+    vertical-align: top
+
   .main-news-item
     &-img
       height: 240px
@@ -872,6 +941,78 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .side-project-title
+    font-size: 16px
+
+  .side-projectslist
+    padding: 20px 15px
+    .title
+      font-size: 22px
+      
+
+
+
+  .s-newslist
+    .container.right
+      margin-left: 15px
+      margin-right: 15px
+      max-width: calc(100% - 30px)
+
+  .side-categories, .side-populars
+    h3
+      font-size: 22px
+      padding: 20px 25px
+  .side-categories
+    .side-cats-wrap
+      padding: 10px 15px
+
+  .side-cat
+    font-size: 12px
+
+  .pop-item
+    &-content
+      padding-left: 15px
+    &-title
+      font-size: 14px
+    &-line
+      font-size: 10px
+  .pop-items-wrap
+    padding: 0 15px
+
+  .article
+    &-img
+      height: 240px
+    &-content-wrap
+      padding: 25px 20px
+    &-title
+      font-size: 20px
+    &-line
+      font-size: 14px
+    &-content
+      font-size: 14px
+    &-bottom
+      margin-top: 50px
+      flex-wrap: wrap
+      .tags
+        width: 100%
+        font-size: 12px
+        margin-bottom: 15px
+      .share
+        width: 100%
+        font-size: 14px
+      .share-item
+        top: 6px
+        margin-right: 5px
+        .svg
+          width: 20px
+
+  .similar
+    h3
+      font-size: 24px
+
+  .sim-item
+    width: 100%
 
   .s-newslist
     padding-top: 50px
