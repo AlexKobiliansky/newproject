@@ -236,7 +236,7 @@ $(document).ready(function(){
 
 
 
-    $('.projects-slider').slick({
+    $('.projects-img-slider').slick({
         infinite: true,
         autoplay: true,
         adaptiveHeight: false,
@@ -546,7 +546,7 @@ $(document).ready(function(){
 
 
     //===== geography =====//
-    $('.city').on('click', function(e){
+    $('.city').on('mouseover', function(e){
         e.preventDefault();
         var th = $(this);
         var allCities = $('.geo-sities');
@@ -565,7 +565,7 @@ $(document).ready(function(){
     });
 
 
-    $('.geo-city-marker').on('click', function(){
+    $('.geo-city-marker').on('mouseover', function(){
        var th = $(this);
        var id = th.attr('id');
 

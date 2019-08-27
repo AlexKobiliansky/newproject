@@ -48,14 +48,27 @@
     +bg-cover
     height: 200px
     position: relative
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      bottom: 0
+      right: 0
+      +mt(.3s)
+      background-color: #000
+      opacity: 0
     .details
       position: absolute
       right: 0
       bottom: 0
       opacity: 0
+      z-index: 2
     &:hover
       .details
         opacity: 1
+      &:after
+        opacity: .4
 
 .project-slide
   display: flex!important
@@ -67,7 +80,7 @@
     width: 40%
     background-color: #494848
     color: #fff
-    padding: 19px 23px 36px 32px
+    padding: 25px 23px 35px 32px
   &-title
     font-size: 28px
     font-weight: 700
@@ -93,7 +106,8 @@
       color: $accent-lightgrey
 
 .projects-slider
-  margin-bottom: 50px
+  margin-top: 10px
+  margin-bottom: 40px
   position: relative
   .intro-prev, .intro-next
     width: 50px
@@ -102,6 +116,18 @@
     bottom: 0
     z-index: 2
   .intro-next
-    right: 40%
+    right: 0
   .intro-prev
-    right: calc(40% + 50px)
+    right: 50px
+
+
+.projects-img-slider
+  width: 60%
+  position: relative
+  .project-slide-img
+    width: 100%
+    height: 100%
+  .slick-track
+    height: 100%
+  .slick-list
+    height: 100%

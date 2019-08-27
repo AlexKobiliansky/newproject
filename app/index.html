@@ -48,14 +48,22 @@
 
 <div id="page-container">
 	<!-- mobile-mnu -->
-	<nav id="mobile-mnu" data-logo="img/logo.png">
-		<ul>
-			<li><a href="#0">О компании</a></li>
-			<li><a href="#0">Проекты</a></li>
-			<li><a href="#0">Услуги</a></li>
-			<li><a href="#0">Блог</a></li>
-			<li><a href="#0">Контакты</a></li>
-		</ul>
+	<nav id="mobile-mnu" data-logo="img/logo-transparent.png">
+		<div class="mobile-mnu-wrapper">
+			<ul>
+				<li><a href="#0">О компании</a></li>
+				<li><a href="#0">Проекты</a></li>
+				<li><a href="#0">Услуги</a></li>
+				<li><a href="#0">Блог</a></li>
+				<li><a href="#0">Контакты</a></li>
+			</ul>
+
+			<div class="mobile-contacts">
+				<a href="tel:+7(4212) 25-25-12" class="call">+7(4212) 25-25-12</a>
+				<a href="#0" class="recall">Заказать звонок</a>
+			</div>
+		</div>
+
 	</nav>
 	<!-- /mobile-mnu -->
 
@@ -133,8 +141,7 @@
 
 					<div class="left">
 						<div class="title">Визуализация</div>
-						<div class="desc">Превосходная визуализация ваших замыслов с использованием новейших программ
-						</div>
+						<div class="desc">Превосходная визуализация ваших замыслов с использованием новейших программ</div>
 					</div>
 					<span data-slick-index="0" class="progressBar"></span>
 				</div>
@@ -157,15 +164,13 @@
 				<div class="intro-slide-visual">
 
 					<div class="left">
-						<div class="title">Визуализация</div>
-						<div class="desc">Превосходная визуализация ваших замыслов с использованием новейших программ
-						</div>
+						<div class="title">Анализ работы</div>
+						<div class="desc">При работе с любым проектом, мы проводим тщательный анализ территории или объекта</div>
 					</div>
 					<span data-slick-index="0" class="progressBar"></span>
 				</div>
 				<div class="intro-slide-desc">Разработка архитектурных и инженерных проектов, начиная с предпроектных
-					разработок и заканчивая приемкой объекта
-				</div>
+					разработок и заканчивая приемкой объекта</div>
 				<div class="intro-slide-videolink" style="background-image: url('img/videolink-img.jpg');">
 					<a href="#video-popup" class="btn-play" data-video="j4F3vwIkxTc"><img src="img/icons/video-btn.svg"
 																						  alt="play video" class="svg"></a>
@@ -182,15 +187,13 @@
 				<div class="intro-slide-visual">
 
 					<div class="left">
-						<div class="title">Визуализация</div>
-						<div class="desc">Превосходная визуализация ваших замыслов с использованием новейших программ
-						</div>
+						<div class="title">Рабочая документация</div>
+						<div class="desc">Все чертежи и сопутствующая документация оформлены согласно нормам ГОСТ</div>
 					</div>
 					<span data-slick-index="0" class="progressBar"></span>
 				</div>
 				<div class="intro-slide-desc">Разработка архитектурных и инженерных проектов, начиная с предпроектных
-					разработок и заканчивая приемкой объекта
-				</div>
+					разработок и заканчивая приемкой объекта</div>
 				<div class="intro-slide-videolink" style="background-image: url('img/videolink-img.jpg');">
 					<a href="#video-popup" class="btn-play" data-video="j4F3vwIkxTc"><img src="img/icons/video-btn.svg"
 																						  alt="play video" class="svg"></a>
@@ -289,7 +292,7 @@
 						<!-- project-item -->
 						<div class="project-item">
 							<div class="project-item-top">
-								<div class="project-item-title">Мариинский театр Мариинский театр Мариинский театр</div>
+								<div class="project-item-title">Мариинский театр</div>
 								<div class="project-item-info">
 									<span>Реконструкция</span>
 									<span><i>05/10/1783</i></span>
@@ -321,7 +324,7 @@
 							<div class="project-item-top">
 								<div class="project-item-title">Генштаб</div>
 								<div class="project-item-info">
-									<span>Реконструкция Реконструкция Реконструкция</span>
+									<span>Реконструкция</span>
 									<span>05/10/1783</span>
 								</div>
 							</div>
@@ -351,52 +354,14 @@
 					<div class="projects-slider">
 						<!-- project-slide -->
 						<div class="project-slide">
-							<div class="project-slide-img" style="background-image: url('img/project-img-1.jpg');"></div>
+							<div class="projects-img-slider">
+								<div class="project-slide-img" style="background-image: url('img/project-img-1.jpg');"></div>
+								<div class="project-slide-img" style="background-image: url('img/project-img-1.jpg');"></div>
+								<div class="project-slide-img" style="background-image: url('img/project-img-1.jpg');"></div>
+							</div>
 							<div class="project-slide-content">
 								<div class="project-slide-title">Детский лагерь</div>
 								<div class="project-slide-desc">Академия танца на Петроградке выглядит просто: утопленная во двор модернистская постройка с искривлённым фасадом из белого кирпича. Но внешний вид здесь и не играет особой роли: это сложно устроенное внутри образовательное здание, построенное без проволочек за год и честно исполняющее свою функцию.</div>
-								<div class="project-slide-chars">
-									<div class="char-item">
-										<div class="char-value"><span>2 736</span> кв. м</div>
-										<div class="char-desc">Площадь территории</div>
-									</div>
-
-									<div class="char-item">
-										<div class="char-value"><span>480</span> чел.</div>
-										<div class="char-desc">Вместимость отдыхающих</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- /project-slide -->
-
-						<!-- project-slide -->
-						<div class="project-slide">
-							<div class="project-slide-img" style="background-image: url('img/project-img-1.jpg');"></div>
-							<div class="project-slide-content">
-								<div class="project-slide-title">Детский лагерь 23112ss sdfsdf </div>
-								<div class="project-slide-desc">Академия танца на Петроградке выглядит просто: утопленная во двор модернистская постройка с искривлённым фасадом из белого кирпича. Но внешний вид здесь и не играет особой роли: это сложно устроенное внутри образовательное здание, построенное без проволочек за год и честно исполняющее свою функцию.</div>
-								<div class="project-slide-chars">
-									<div class="char-item">
-										<div class="char-value"><span>2 736</span> кв. м</div>
-										<div class="char-desc">Площадь территории</div>
-									</div>
-
-									<div class="char-item">
-										<div class="char-value"><span>480</span> чел.</div>
-										<div class="char-desc">Вместимость отдыхающих</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- /project-slide -->
-
-						<!-- project-slide -->
-						<div class="project-slide">
-							<div class="project-slide-img" style="background-image: url('img/project-img-1.jpg');"></div>
-							<div class="project-slide-content">
-								<div class="project-slide-title">Детский лагерь</div>
-								<div class="project-slide-desc">Академия танца</div>
 								<div class="project-slide-chars">
 									<div class="char-item">
 										<div class="char-value"><span>2 736</span> кв. м</div>
@@ -417,7 +382,7 @@
 						<!-- project-item -->
 						<div class="project-item">
 							<div class="project-item-top">
-								<div class="project-item-title">Мариинский театр Мариинский театр Мариинский театр</div>
+								<div class="project-item-title">Мариинский театр</div>
 								<div class="project-item-info">
 									<span>Реконструкция</span>
 									<span><i>05/10/1783</i></span>

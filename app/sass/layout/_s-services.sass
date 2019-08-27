@@ -19,12 +19,23 @@
     position: relative
     +bg-cover
     height: 230px
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      bottom: 0
+      right: 0
+      +mt(.3s)
+      background-color: #000
+      opacity: 0
     a
       +mt(.3s)
       position: absolute
       right: 0
       bottom: 0
       opacity: 0
+      z-index: 2
   &-desc
     background-color: rgba(37, 37, 37, 0.7)
     font-size: 18px
@@ -34,6 +45,8 @@
     .service-item-img
       a
         opacity: 1
+      &:after
+        opacity: .4
 
 .services-bottomline
   margin-top: 50px
