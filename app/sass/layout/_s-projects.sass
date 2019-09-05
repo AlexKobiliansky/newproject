@@ -1,11 +1,19 @@
 .s-projects
   padding-top: 80px
   .section-title
-    margin-bottom: 90px
+    margin-bottom: 20px
+    &:after
+      display: none!important
     .btn
       float: right
       position: relative
       top: 10px
+      width: 240px
+      span
+        font-size: 18px
+        padding-left: 0
+        line-height: 1.2
+
   .btn-wrap.mobile-content
     display: none
 
@@ -21,6 +29,11 @@
   justify-content: space-between
   &.mobile-content
     display: none
+  &.stripes
+    .project-item
+      &:first-child, &:nth-child(2)
+        padding-top: 50px
+        border-top: 10px solid #000
 
 .project-item
   width: calc(50% - 25px)
@@ -85,6 +98,10 @@
     font-size: 28px
     font-weight: 700
     margin-bottom: 30px
+    display: inline-block
+    color: #fff
+    &:hover
+      text-decoration: underline
   &-desc
     font-size: 13px
     line-height: 15px
@@ -131,3 +148,4 @@
     height: 100%
   .slick-list
     height: 100%
+

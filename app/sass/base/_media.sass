@@ -10,6 +10,21 @@
 
 @media screen and (max-width: 1700px)
 
+  .s-projects
+    .section-title
+      margin-bottom: 40px
+
+  .projectlist-item-bottom.with-partner
+    .partner
+      flex-direction: column
+      align-items: center
+      span
+        font-size: 12px
+        text-align: center
+      img
+        max-width: 43px
+        margin-right: 8px
+
   .sim-items-wrap
     flex-wrap: wrap
 
@@ -138,6 +153,11 @@
 
 @media screen and (max-width: 1600px)
 
+  .s-projects
+    .section-title
+      .btn
+        width: auto
+
   .s-clients.dark-after
     &:after
       width: 60px
@@ -181,6 +201,14 @@
     padding-left: 30px
 
 @media screen and (max-width: 1500px)
+
+  .pop-item
+    &-img
+      width: 90px
+      height: 72px
+    &-content
+      padding-left: 15px
+      width: calc(100% - 90px)
 
   .main-news-item
     margin-bottom: 50px
@@ -337,12 +365,19 @@
   .s-projects
     .section-title
       position: relative
-      margin-bottom: 110px
+      margin-bottom: 90px
       .btn
         position: absolute
         float: none
-        top: 80px
+        top: 70px
         left: 0
+
+  .project-items-wrap
+    &.stripes
+      .project-item
+        &:first-child, &:nth-child(2)
+          padding-top: 40px
+          border-top: 6px solid #000
 
   .project-slide
     flex-direction: column
@@ -404,6 +439,25 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .team-slider
+    .slider-prev, .slider-next
+      &:focus, &:active
+        background-color: #494848
+        background-image: url('../img/icons/arrow-white.svg')
+
+
+  .slider-prev, .slider-next
+    &:focus, &:active
+      background-color: #fff
+      background-image: url('../img/icons/arrow-black.svg')
+
+  .project-items-wrap
+    &.stripes
+      .project-item
+        &:first-child, &:nth-child(2)
+          padding-top: 0
+          border-top: none
 
   .s-clients.dark-after
     &:after
@@ -613,6 +667,9 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .ishome .footer-wrap .left-part, .isnohome.contacts .footer-wrap .left-part
+    padding: 40px 0
 
   .consult
     display: none
@@ -826,6 +883,14 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .pop-item
+    &-img
+      width: 110px
+      height: 72px
+    &-content
+      padding-left: 25px
+      width: calc(100% - 110px)
+
   .popup-form
     padding: 30px 50px
 
@@ -881,7 +946,7 @@
       font-size: 28px
       margin-bottom: 30px
     &-span
-      &>span
+      &>span, p>span
         font-size: 36px
 
 
@@ -937,6 +1002,7 @@
       display: block
       text-align: center
       margin-top: 50px
+      margin-bottom: 50px
 
   .project-slide
     &-img
@@ -950,10 +1016,25 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .article-images
+    img
+      width: 100%
+
+  .projectlist-slide
+    &-content
+      padding: 10px
+      max-width: 200px
+    &-title
+      font-size: 12px
+      margin-bottom: 5px
+    &-date
+      font-size: 12px
+
   .popup-form
     padding: 30px 15px
 
   .s-clients.dark-after
+    padding-bottom: 0
     .consult, .consult.active
       padding: 22px 55px
       font-size: 20px
@@ -964,7 +1045,6 @@
       right: auto
       bottom: auto
       max-width: 100%
-
       span
         pointer-events: none
       .svg
@@ -972,6 +1052,8 @@
       a
         width: auto
         max-width: 100%
+        opacity: 1
+        margin-right: 15px
 
   .side-project-title
     font-size: 16px
@@ -1119,7 +1201,7 @@
     &-title
       font-size: 20px
     &-span
-      &>span
+      &>span, p>span
         font-size: 22px
         span
           bottom: -12px

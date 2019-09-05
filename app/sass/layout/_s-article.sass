@@ -21,11 +21,16 @@
       font-weight: 700
       margin-right: 50px
       position: relative
+      +mt(.3s)
+      color: #c4c4c4
       &:after
         content: '/'
         position: absolute
         right: -30px
         font-weight: normal
+        color: #c4c4c4
+      &:hover
+        color: $accent-grey
     .date
       display: inline-block
   &-content
@@ -114,6 +119,10 @@
     .category
       text-transform: uppercase
       font-weight: 700
+      +mt(.3s)
+      color: #c4c4c4
+      &:hover
+        color: $accent-grey
     .date
       text-align: right
 

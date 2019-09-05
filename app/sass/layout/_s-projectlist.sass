@@ -82,6 +82,27 @@
 .projectlist-slide
   +bg-cover
   height: 380px
+  position: relative
+  &-content
+    background-color: #fff
+    position: absolute
+    padding: 11px 23px 15px 29px
+    left: 0
+    bottom: 20px
+    width: 100%
+    max-width: 330px
+  &-title
+    font-size: 20px
+    color: #000
+    font-weight: 700
+    margin-bottom: 10px
+    display: inline-block
+    &:hover
+      text-decoration: underline
+      color: #000
+  &-date
+    font-size: 13px
+    color: #969696
 
 .projectlist-nav
   width: 180px
@@ -144,13 +165,39 @@
       display: block
       &:first-child
         font-weight: 700
+        text-transform: uppercase
   &-desc
     font-size: 14px
     margin-bottom: 20px
   &-bottom
+    text-align: right
     .btn
       position: relative
       top: 5px
+    .partner
+      display: none
+    &.with-partner
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+      .btn
+        height: 53px
+        top: 0
+      .partner
+        display: flex
+        align-items: flex-end
+        font-size: 14px
+        font-weight: 700
+        color: #000
+        position: relative
+        top: 5px
+        span
+          position: relative
+          bottom: 5px
+          text-align: left
+        img
+          margin-right: 15px
+
 
 
 
@@ -195,7 +242,7 @@
     h4
       font-size: 18px
       margin-bottom: 10px
-    &>span
+    &>span, p>span
       font-size: 52px
       position: relative
       //margin-bottom: 33px

@@ -287,6 +287,8 @@ $(document).ready(function(){
     });
 
     $('.projectlist-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 6000,
         slidesToShow: 1,
         arrows: false,
         fade: true,

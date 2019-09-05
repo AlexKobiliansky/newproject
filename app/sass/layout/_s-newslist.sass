@@ -26,10 +26,15 @@
       margin-right: 50px
       position: relative
       font-weight: 700
+      color: #c4c4c4
+      +mt(.3s)
+      &:hover
+        color: $accent-grey
       &:after
         content: '/'
         position: absolute
         right: -30px
+        color: #c4c4c4
     .date
       display: inline-block
   &-desc
@@ -127,8 +132,10 @@
   &-img
     +bg-cover
     width: 110px
+    height: 72px
   &-content
     padding-left: 28px
+    width: calc(100% - 110px)
   &-title
     font-size: 16px
     color: #000
@@ -146,8 +153,28 @@
       width: 70%
       text-transform: uppercase
       font-weight: 700
+      color: #c4c4c4
+      +mt(.3s)
+      &:hover
+        color: $accent-grey
     .date
       text-align: right
   &:last-child
     border-bottom: none
+
+
+.article-images
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 30px 0
+  img
+    margin-bottom: 8px
+    width: calc(50% - 4px)
+    &:first-child
+      width: 100%
+
+.article-content
+  h3
+    color: #000
 
