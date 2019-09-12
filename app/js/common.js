@@ -606,8 +606,12 @@ $(document).ready(function(){
 
     //===== /geography =====//
 
-    $('.s-clients .consult span').on('click', function(){
-       $(this).parents('.consult').toggleClass('active');
+    $('.s-clients .consult span, .s-geography .consult span').on('mouseover', function(){
+       $(this).parents('.consult').addClass('active');
+    });
+
+    $('.s-clients .consult, .s-geography .consult').on('mouseleave', function(){
+        $(this).removeClass('active');
     });
 
 });
