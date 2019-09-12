@@ -160,6 +160,18 @@
 
 @media screen and (max-width: 1600px)
 
+  .eval-slider
+    left: 50px
+    width: calc(55% - 50px)
+
+  .eval-content
+    width: 45%
+    left: 55%
+    padding-left: 60px
+
+  .eval-content-title
+    font-size: 30px
+
   .servlist-item
     &-content
       padding-left: 60px
@@ -524,6 +536,25 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-serv-eval
+    left: 0
+    width: 100%
+
+  .eval-slider
+    left: 30px
+    width: calc(55% - 30px)
+    .slider-next, .slider-prev
+      &:hover, &:focus, &:active
+        background-color: #737373
+        background-image: url('../img/icons/arrow-white.svg')
+
+  .eval-content
+    width: 45%
+    left: 55%
+    padding-left: 60px
+    padding-right: 60px
+
+
   .servlist-item
     padding-left: 0
 
@@ -789,22 +820,48 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .eval-content
+    left: 0
+    width: 100%
+
+  .eval-slider
+    position: relative
+    left: 0
+    width: 100%
+    top: 0
+    .slider-prev, .slider-next
+      top: auto
+      bottom: 0
+    .slider-prev
+      left: 350px
+      z-index: 3
+    .slider-next
+      left: 405px
+
+
+  .eval-slide
+    .content
+      left: 0
+      right: auto
+
   .servlist-item
     padding-bottom: 0
-    padding-top: 60px
+    padding-top: 0
     &-content
       padding-bottom: 60px
-      padding-top: 0
+      padding-top: 60px
     &-wrap
       flex-wrap: wrap
     &:nth-child(odd)
+      .servlist-item-wrap
+        flex-direction: column-reverse
       .servlist-item-content
         width: 100%
       .servlist-item-project
         width: 100%
     &:nth-child(even)
-      .sevlist-item-wrap
-        flex-direction: row
+      .servlist-item-wrap
+        flex-direction: column-reverse
       .servlist-item-content
         width: 100%
       .servlist-item-project
@@ -832,6 +889,7 @@
   .serv-intro-item
     width: calc(50% - 20px)
     margin-bottom: 40px
+
     &:last-child
       width: calc(50% - 20px)
 
@@ -1196,6 +1254,38 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .eval-content
+    padding-left: 30px
+    padding-right: 30px
+    padding-top: 60px
+    padding-bottom: 40px
+    &-title
+      margin-bottom: 45px
+    &-desc
+      font-size: 18px
+
+
+  .eval-slider
+    .slider-prev, .slider-next
+      width: 40px
+      height: 36px
+      background-size: 9px 12px
+    .slider-prev
+      left: 230px
+    .slider-next
+      left: 270px
+
+  .eval-slide
+    height: 250px
+    .content
+      width: 230px
+      padding-right: 8px
+      .title
+        font-size: 14px
+        margin-bottom: 10px
+      .date
+        font-size: 10px
 
   .servlist-item
     &-content

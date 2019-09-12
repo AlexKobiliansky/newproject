@@ -1,0 +1,71 @@
+.s-serv-eval
+  padding-top: 0
+  background-color: #252525
+  color: #fff
+  position: relative
+  left: 130px
+  width: calc(100% - 130px)
+  .btn-wrap
+    text-align: right
+    .btn
+      width: 237px
+
+.eval-slider
+  position: absolute
+  left: 130px
+  top: -49px
+  width: calc(58% - 130px)
+  background-color: #252525
+  .slider-prev, .slider-next
+    position: absolute
+    top: 0
+    background-color: #737373
+    background-image: url('../img/icons/arrow-white.svg')
+    &:hover
+      background-color: #252525
+
+  .slider-prev
+    right: -55px
+  .slider-next
+    right: -110px
+
+.eval-slide
+  height: 425px
+  position: relative
+  background-color: #252525
+  +bg-cover
+  .content
+    background-color: #fff
+    position: absolute
+    right: 0
+    bottom: 0
+    padding: 11px 30px 15px
+    width: 350px
+    .title
+      color: #000
+      display: inline-block
+      margin-bottom: 5px
+      font-size: 20px
+      font-weight: 700
+      &:hover
+        text-decoration: underline
+    .date
+      font-size: 13px
+      color: #969696
+
+.eval-content
+  width: 42%
+  left: 58%
+  position: relative
+  padding-left: 130px
+  padding-right: 100px
+  padding-top: 70px
+  padding-bottom: 100px
+  &-title
+    font-size: 45px
+    font-weight: 700
+    margin-bottom: 33px
+  &-desc
+    font-size: 22px
+    color: #c4c4c4
+    margin-bottom: 70px

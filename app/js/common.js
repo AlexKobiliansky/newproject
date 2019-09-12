@@ -286,6 +286,17 @@ $(document).ready(function(){
         ]
     });
 
+    $('.eval-slider').slick({
+        infinite: true,
+        autoplay: true,
+        adaptiveHeight: true,
+        fade: true,
+        autoplaySpeed: 8000,
+        prevArrow: '<button type="button" class="intro-prev slider-prev"></button>',
+        nextArrow: '<button type="button" class="intro-next slider-next"></button>',
+        slidesToShow: 1,
+    });
+
     $('.projectlist-slider').slick({
         autoplay: true,
         autoplaySpeed: 6000,
@@ -570,6 +581,8 @@ $(document).ready(function(){
     /**
      * toTop functionality end
      */
+
+    $(".serv-intro-item").mPageScroll2id();
 
 
 
@@ -1237,7 +1250,7 @@ $(window).on('load', function(){
 
     $('.close-popup-project').on('click', function(){
         $.magnificPopup.close();
-    })
+    });
 
 
     $(function () {
