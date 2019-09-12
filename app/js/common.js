@@ -356,6 +356,8 @@ $(document).ready(function(){
             $('.sim-item-title').height('auto').equalHeights();
         }
 
+        $('.serv-intro-item .item-desc').height('auto').equalHeights();
+
 
 
 

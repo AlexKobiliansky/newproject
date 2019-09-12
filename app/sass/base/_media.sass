@@ -10,6 +10,13 @@
 
 @media screen and (max-width: 1700px)
 
+  .serv-intro-desc
+    left: 162px
+
+  .serv-intro-wrap
+    left: 162px
+    width: calc(100% - 340px)
+
   .s-projects
     .section-title
       margin-bottom: 40px
@@ -153,6 +160,20 @@
 
 @media screen and (max-width: 1600px)
 
+  .serv-intro-item
+    .item-desc
+      font-size: 20px
+      padding: 20px 20px 30px
+      &:after
+        width: 8px
+        height: 14px
+        bottom: 15px
+        right: 15px
+    &:last-child
+      .item-desc
+        &:after
+          right: 15px
+
   .s-projects
     .section-title
       .btn
@@ -201,6 +222,9 @@
     padding-left: 30px
 
 @media screen and (max-width: 1500px)
+
+  .serv-intro-wrap
+    width: calc(100% - 200px)
 
   .pop-item
     &-img
@@ -302,6 +326,17 @@
         width: 90px
 
 @media (max-width: 1400px)
+
+  .serv-intro-wrap
+    justify-content: space-between
+
+  .serv-intro-item
+    width: calc(25% - 15px)
+    margin: 0
+    &:last-child
+      flex-grow: initial
+      width: calc(25% - 15px)
+
 
   .article
     &-img
@@ -439,6 +474,22 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .serv-intro-container
+    min-height: 700px
+    height: 700px
+
+  .serv-intro-desc
+    left: 100px
+    h1
+      font-size: 42px
+      margin-bottom: 15px
+    p
+      font-size: 22px
+
+  .serv-intro-wrap
+    left: 30px
+    width: calc(100% - 60px)
 
   .team-slider
     .slider-prev, .slider-next
@@ -668,6 +719,32 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .serv-intro-container
+    min-height: 400px
+    height: 400px
+
+  .serv-intro-desc
+    background-color: transparent
+    color: #fff
+    top: 100px
+    left: 0
+
+  .serv-intro-wrap
+    position: relative
+    bottom: 0
+    top: -30px
+    flex-wrap: wrap
+
+  .serv-intro-item
+    width: calc(50% - 20px)
+    margin-bottom: 40px
+    &:last-child
+      width: calc(50% - 20px)
+
+  .s-serv-intro
+    .wrap-container
+      height: auto
+
   .ishome .footer-wrap .left-part, .isnohome.contacts .footer-wrap .left-part
     padding: 40px 0
 
@@ -883,6 +960,12 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .serv-intro-item
+    width: calc(50% - 10px)
+    margin-bottom: 20px
+    &:last-child
+      width: calc(50% - 10px)
+
   .pop-item
     &-img
       width: 110px
@@ -1015,6 +1098,31 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .serv-intro-container
+    height: 500px
+
+  .serv-intro-desc
+    left: 30px
+    padding: 0
+    top: 320px
+    max-width: 240px
+    h1
+      font-size: 40px
+      margin-bottom: 10px
+    p
+      font-size: 18px
+
+  .serv-intro-item
+    width: 100%
+    margin-bottom: 35px
+    .item-img
+      height: 170px
+    .item-desc
+      font-size: 22px
+
+    &:last-child
+      width: 100%
 
   .article-images
     img

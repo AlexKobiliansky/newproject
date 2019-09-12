@@ -1,0 +1,78 @@
+.s-serv-intro
+  padding-top: 0
+  .wrap-container
+    background: #494848
+    height: 250px
+
+.serv-intro-container
+    position: relative
+    height: calc(100vh - 130px)
+    min-height: 680px
+    +bg-cover
+
+.serv-intro-desc
+  position: absolute
+  background-color: #fff
+  top: 0
+  left: 272px
+  padding: 105px 60px 40px
+  color: #000
+  max-width: 540px
+  width: 100%
+  h1
+    font-size: 50px
+    margin-bottom: 25px
+  p
+    margin-bottom: 0
+    font-size: 26px
+
+.serv-intro-wrap
+  position: absolute
+  left: 272px
+  bottom: 475px
+  display: flex
+  width: calc(100% - 450px)
+
+.serv-intro-item
+  margin: 0 20px
+  width: 250px
+  justify-content: space-between
+  display: block
+  .item-img
+    height: 220px
+    +bg-cover
+    display: block
+  .item-desc
+    display: block
+    background-color: #fff
+    font-size: 26px
+    color: #000
+    padding: 24px 24px 44px
+    font-weight: 700
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      background-image: url('../img/icons/arrow-black.svg')
+      +bg-cover
+      width: 10px
+      height: 17.5px
+      transform: rotate(90deg)
+      right: 26px
+      bottom: 30px
+      opacity: 0
+  &:first-child
+    margin-left: 0
+  &:last-child
+    margin-right: 0
+    flex-grow: 2
+    width: auto
+    .item-desc
+      &:after
+        right: calc(50% - 8px)
+  &:hover
+    .item-desc
+      text-decoration: underline
+      &:after
+        opacity: 1
+
