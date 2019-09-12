@@ -1,0 +1,45 @@
+.s-today
+  padding-top: 0
+  color: #fff
+  display: flex
+  justify-content: space-between
+  left: 130px
+  width: calc(100% - 130px)
+  position: relative
+
+.today-content
+  background-color: #252525
+  width: calc(100% - 838px)
+  height: 460px
+  padding: 60px 180px 90px
+  font-size: 22px
+  .section-title
+    color: #fff
+    margin-bottom: 100px
+    &:after
+      background-color: #fff
+
+.today-videolink
+  position: relative
+  width: 838px
+  height: 520px
+  display: flex
+  justify-content: center
+  align-items: center
+  +bg-cover
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background-color: rgba(0,0,0,.5)
+  .svg
+    fill: #fff
+    transition: all .3s ease
+    opacity: .5
+    width: 87px
+    height: auto
+    &:hover
+      opacity: .8

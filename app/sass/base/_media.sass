@@ -4,11 +4,24 @@
 /*==========  Desktop First  ==========*/
 
 @media screen and (max-width: 1800px)
+
+  .today-content
+    padding-left: 50px
+    padding-right: 50px
+
   .container, .container.right
     margin-left: 260px
     max-width: calc(100% - 340px)
 
 @media screen and (max-width: 1700px)
+
+  .today-content
+    font-size: 20px
+    .section-title
+      font-size: 40px
+      margin-bottom: 75px
+      &:after
+        height: 6px
 
   .about-intro-title
     left: 32px
@@ -272,6 +285,11 @@
     padding-left: 30px
 
 @media screen and (max-width: 1500px)
+
+  .today-content
+    width: 45%
+  .today-videolink
+    width: 55%
 
   .about-intro-title
     left: 0
@@ -551,6 +569,10 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-today
+    left: 0
+    width: 100%
+
   .s-about-intro
     left: 0
     width: 100%
@@ -747,8 +769,6 @@
     .half-part
       width: 100%
 
-
-
   .intro-slide-desc
     font-size: 20px
     padding: 35px 47px
@@ -838,6 +858,16 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-today
+    flex-direction: column-reverse
+
+  .today-videolink
+    width: 100%
+
+  .today-content
+    width: 100%
+    height: auto
 
   .about-intro-title
     padding-left: 30px
@@ -1146,6 +1176,9 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .today-videolink
+    height: 400px
+
   .servlist-item
     &-project
       height: 400px
@@ -1288,6 +1321,20 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .today-videolink
+    height: 200px
+    .svg
+      width: 55px
+      height: auto
+  .today-content
+    padding: 40px 30px 30px
+    font-size: 14px
+    .section-title
+      font-size: 36px
+      margin-bottom: 80px
+      &:after
+        width: 240px
 
   .about-intro-title
     width: 100%
