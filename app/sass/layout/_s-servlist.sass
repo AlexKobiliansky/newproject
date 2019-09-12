@@ -1,0 +1,74 @@
+.s-servlist
+  padding-top: 0
+
+.servlist-item
+  padding: 120px 0 160px
+  padding-left: 130px
+  &-wrap
+    display: flex
+    justify-content: space-between
+  &-project
+    height: 600px
+    +bg-cover
+    position: relative
+    .content
+      background-color: #fff
+      padding: 10px 30px 15px
+      width: 350px
+      position: absolute
+      bottom: 0
+    .title
+      color: #000
+      font-size: 20px
+      font-weight: 700
+      display: inline-block
+      margin-bottom: 5px
+      &:hover
+        text-decoration: underline
+    .date
+      font-size: 13px
+      color: #969696
+  &-content
+    padding-left: 130px
+    padding-right: 230px
+    padding-top: 30px
+  &-title
+    position: relative
+    font-size: 64px
+    color: #000
+    margin-bottom: 100px
+    font-weight: 700
+    &:after
+      content: ''
+      position: absolute
+      height: 10px
+      width: 220px
+      background-color: #000
+      left: 25px
+      bottom: -30px
+  &-desc
+    font-size: 22px
+    color: #000
+
+
+
+  &:nth-child(odd)
+    background-color: #e5e5e5
+    .servlist-item-content
+      width: 58%
+    .servlist-item-project
+      width: 42%
+      .content
+        left: 0
+
+  &:nth-child(even)
+    background-color: #C4C4C4
+    .servlist-item-wrap
+      flex-direction: row-reverse
+    .servlist-item-content
+      width: 42%
+      padding-right: 160px
+    .servlist-item-project
+      width: 58%
+      .content
+        right: 0

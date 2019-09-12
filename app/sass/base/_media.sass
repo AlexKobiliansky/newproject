@@ -160,6 +160,32 @@
 
 @media screen and (max-width: 1600px)
 
+  .servlist-item
+    &-content
+      padding-left: 60px
+      padding-right: 60px
+    &-title
+      font-size: 50px
+    &:nth-child(odd)
+      .servlist-item-content
+        width: 55%
+      .servlist-item-project
+        width: 45%
+    &:nth-child(even)
+      .servlist-item-content
+        width: 45%
+        padding-right: 60px
+      .servlist-item-project
+        width: 55%
+
+  .serv-main-project
+    width: 55%
+
+  .serv-main-wrap
+    width: 45%
+    left: 55%
+    padding: 40px 60px
+
   .serv-intro-item
     .item-desc
       font-size: 20px
@@ -327,6 +353,29 @@
 
 @media (max-width: 1400px)
 
+  .servlist-item
+    padding-top: 80px
+    padding-bottom: 80px
+    &-desc
+      font-size: 20px
+    &-project
+      height: 500px
+    &-title
+      font-size: 40px
+      margin-bottom: 60px
+      &:after
+        height: 6px
+        bottom: -25px
+
+  .serv-main-item
+    .svg
+      width: 80px
+    .title
+      font-size: 20px
+      margin-bottom: 10px
+    .desc
+      font-size: 16px
+
   .serv-intro-wrap
     justify-content: space-between
 
@@ -474,6 +523,27 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .servlist-item
+    padding-left: 0
+
+  .s-serv-main
+    width: 100%
+    left: 0
+
+  .serv-main-project
+    position: relative
+    width: 100%
+    height: 400px
+    top: 0
+    .content
+      left: 0
+      right: auto
+
+  .serv-main-wrap
+    left: 0
+    width: 100%
+    padding: 50px 30px
 
   .serv-intro-container
     min-height: 700px
@@ -719,6 +789,30 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .servlist-item
+    padding-bottom: 0
+    padding-top: 60px
+    &-content
+      padding-bottom: 60px
+      padding-top: 0
+    &-wrap
+      flex-wrap: wrap
+    &:nth-child(odd)
+      .servlist-item-content
+        width: 100%
+      .servlist-item-project
+        width: 100%
+    &:nth-child(even)
+      .sevlist-item-wrap
+        flex-direction: row
+      .servlist-item-content
+        width: 100%
+      .servlist-item-project
+        width: 100%
+        .content
+          left: 0
+          right: auto
+
   .serv-intro-container
     min-height: 400px
     height: 400px
@@ -960,6 +1054,10 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .servlist-item
+    &-project
+      height: 400px
+
   .serv-intro-item
     width: calc(50% - 10px)
     margin-bottom: 20px
@@ -1098,6 +1196,48 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .servlist-item
+    &-content
+      padding-left: 30px
+      padding-right: 30px
+    &-title
+      font-size: 30px
+      margin-bottom: 65px
+      &:after
+        width: 160px
+    &-desc
+      font-size: 14px
+    &-project
+      height: 250px
+      .content
+        width: 250px
+      .title
+        font-size: 14px
+        margin-bottom: 10px
+      .date
+        font-size: 10px
+
+  .serv-main-project
+    height: 250px
+    .content
+      padding: 11px 30px
+      width: 250px
+    .title
+      font-size: 14px
+    .date
+      font-size: 10px
+
+  .serv-main-item
+    margin-bottom: 30px
+    .svg
+      width: 65px
+    .content
+      padding-left: 20px
+    .title
+      font-size: 16px
+    .desc
+      font-size: 12px
 
   .serv-intro-container
     height: 500px
@@ -1614,9 +1754,6 @@
     top: 420px
     .current
       font-size: 24px
-
-
-
 
   .intro-slider
     .intro-prev, .intro-next
